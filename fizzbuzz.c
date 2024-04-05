@@ -9,10 +9,11 @@ int main(int argc, char *argv[]) {
         return -1;
     }
 
+//convert CLA into int
 int n = atoi(argv[1]);
 
-//allocate memory for a pointer of pointers which will point to the contents of our array
-char ** container = (char **)malloc(n * sizeof(char*));
+//allocate memory for a pointer of pointers which will point to ALL the contents of our array (n+1)
+char ** container = (char **)malloc((n + 1) * sizeof(char*));
 
 for (int i = 0; i <= n; i++ )
 {
@@ -25,7 +26,7 @@ for (int i = 0; i <= n; i++ )
         strcpy(container[i], "[*]FIZZBUZZ");
 
     //or if its divisible by 3 only copy BUZZ
-    else if((i + 1) % 3 == 0)
+    else if((i) % 3 == 0)
     {
         strcpy(container[i], "[*]BUZZ");
     }
