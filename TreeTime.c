@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
         //read into the buf, 1 character at a time. Up to buffer_size, from input
         num_read = fread(buf, sizeof(char), buffer_size, stdin);
         
-        printf("[");
+        printf("\n[");
         //write the buf, 1 character at a time. Up to num_read to output
         fwrite(buf, sizeof(char), num_read, stdout);
         printf("]");
