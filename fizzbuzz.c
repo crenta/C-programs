@@ -1,4 +1,4 @@
-//CHRISTOPHER TRENTACOSTE
+//CRENTA
 
 #include <stdio.h>
 #include <stdlib.h>
