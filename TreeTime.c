@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
         fprintf(output_file, "(");
         //write the buf, 1 character at a time. Up to num_read, to the file
         fwrite(buf, sizeof(char), num_read, output_file);
-        fprintf(output_file, ")");
+        fprintf(output_file, ")\n");
     } 
     while (num_read == buffer_size);
 
