@@ -32,7 +32,7 @@ int main()
            subtotal += rainfall[year][month];
         }
 
-        printf("For the year of %d there was an average of %.2f rainfall", year + 2010, subtotal/MONTHS);
+        printf("For the year of %d there was an average of %.2f inches of  rainfall!\n", year + 2010, (subtotal/MONTHS));
     }
 
 
